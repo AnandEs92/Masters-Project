@@ -1,0 +1,192 @@
+<div *ngIf="resultVisible===false" class="card scrollable" >
+  <form   [formGroup]="newDocumentForm" >
+ <table >
+          <tbody>
+            <tr *ngFor="let item of questions;let i = index;">
+              <td>
+                <label class="boldTitle">{{item.id+". "+item.label}}<b *ngIf="item.required" style="color:red"> *</b></label>
+              </td>
+              <td class="form-width">
+                <p-multiSelect  *ngIf="item.type==='multiselect-os'" [(ngModel)]="selectedOS"  [options]="item.options" [formControlName]="item.id"></p-multiSelect>
+                <p-multiSelect  *ngIf="item.type==='multiselect-lang'" [(ngModel)]="selectedLang"  [options]="item.options" [formControlName]="item.id"></p-multiSelect>
+                <!--<p-dropdown  #dd   *ngIf="item.type==='dropdown'"   [options]="item.options" [formControlName]="item.id"-->
+                    <!--[filter]="true"  class="form-control"(onChange)="changeDropdownValue(dd,item)"-->
+                  <!--[autoWidth]="false" [style]="{'width':'100%'}"  >-->
+                   <!--<ng-template let-options pTemplate="item">-->
+                   <!--<div class="ui-helper-clearfix" style="position: relative;height: 25px;">-->
+                <!--<div style="font-size:14px;float:right;margin-top:4px">{{options.label}}</div>-->
+        <!--</div>-->
+    <!--</ng-template>-->
+                <!--</p-dropdown>-->
+                 <select #dropdown *ngIf="item.type==='dropdown'" (change)="patchValue($event.target.value)" class="form-control" [formControlName]="item.id">
+          <option *ngFor="let options of item.options"
+                  value="{{ options.label }}">{{ options.label }}</option>
+                </select>
+                 <input
+                    *ngIf="item.type==='text'" type="text" pInputText [formControlName]="item.id"  class="form-control input-form" name="{{item.id}}">
+                <input
+                    *ngIf="item.type==='email'" type="email" pInputText [formControlName]="item.id"  class="form-control input-form" name="{{item.id}}">
+                <!--<p-fileUpload *ngIf="item.type==='file'" name="myfile[]" [showUploadButton]="false" (onSelect)="onUpload($event)"-->
+                      <!--accept="image/*" ></p-fileUpload>-->
+              <input
+				type="file" *ngIf="item.type==='file'"
+				id="image-upload"
+				(change)="previewImage($event)"
+				accept="image/*"
+			/>
+              </td>
+            </tr>
+          <tr>
+            <td>
+            <button pButton class="result-button"  type="button" [disabled]="!newDocumentForm.valid" (click)="checkResult()" label="Check Result"></button>
+              <!--[disabled]="!newDocumentForm.valid"-->
+            </td>
+          </tr>
+          </tbody>
+ </table>
+  </form>
+</div>
+<div *ngIf="resultVisible===true" class="card w-350 m-l-40">
+<button pButton class="back-button" type="button" (click)="resultVisible=false;isApple = false;isWeb = false;isAndroid = false;" label="Back"></button>
+		<div class="p20">
+			<div class="flag row b28">
+				<img src="assets/images/logo.jpg" />
+				<div class="txt1 l20">Health App Quality Label</div>
+			</div>
+			<div class="app row b20">
+<img id="preview"  src="./assets/images/favicon.ico" onclick="openPopup(event)" />
+				<div class="txt2 l20">{{appName}}</div>
+			</div>
+			<div class="icon row h50 vc">
+				<img class="bg2 r9 c5" *ngIf="isApple" src="./assets/images/icon1.png" />
+				<img class="bg3 r9 c5" *ngIf="isAndroid"src="./assets/images/icon2.png" />
+				<img class="bg4 r9 c5" *ngIf="isWeb" src="./assets/images/icon3.png" />
+			</div>
+			<div class="icon row h50">
+				<img class="bg4 r9 c5 t5" src="./assets/images/factory.png" />
+				<div class="txt4">{{manufacturer}}</div>
+			</div>
+			<div class="column h28 hc">
+				<div class="line"></div>
+			</div>
+			<div>
+				<div class="txt5 b9">Benifit of the app</div>
+				<div class="txt6">
+					With this app [intended users] can [intended use] / With this app [x
+					in 10] [intended users] [health effect] [if use]
+				</div>
+			</div>
+			<div class="row h50">
+				<img class="icn-s r12" src="./assets/images/warning.png" />
+				<div class="txt4">
+					Check [here] when app requires approval from a health professional
+					before use
+				</div>
+			</div>
+		</div>
+		<div class="ps20 pb16 bg5">
+			<div class="h28">
+				<span class="txt7">Healthy and safe</span>
+			</div>
+			<div class="row h50">
+				<div class="fl5 row bg6 br3"  [ngClass]="{'bg9': healthAndSafeLabel === 'A', 'bg6' : healthAndSafeLabel === 'B'
+				, 'bg10' : healthAndSafeLabel === 'C', 'bg7' : healthAndSafeLabel === 'D', 'bg8' : healthAndSafeLabel === 'E'}">
+					<div class="fl1 hc vc"><div class="box44 br3"></div></div>
+					<div class="fl3"></div>
+					<!--<div class="fl1 txt8 hc"></div>-->
+				</div>
+	 <div  *ngIf="healthAndSafeLabel === 'E'" [ngClass]="{'bg8': healthAndSafeLabel === 'E'}" class="fl1 bgw bln br2 txt8 hc">E</div>
+          <div *ngIf="healthAndSafeLabel === 'D'" [ngClass]="{'bg7': healthAndSafeLabel === 'D'}" class="fl1 bgw bln br2 txt8 hc">D</div>
+              <div *ngIf="healthAndSafeLabel === 'C'" [ngClass]="{'bg10': healthAndSafeLabel === 'C'}" class="fl1 bgw bln br2 txt8 hc">C</div>
+                <div *ngIf="healthAndSafeLabel === 'B'"[ngClass]="{'bg6': healthAndSafeLabel === 'B'}" class="fl1 bgw bln br2 txt8 hc">B</div>
+          				<div *ngIf="healthAndSafeLabel === 'A'" [ngClass]="{'bg9': healthAndSafeLabel === 'A'}" class="fl1 bgw bln br2 txt8 hc">A</div>
+			</div>
+			<div class="h28">
+				<span class="txt7">Easy to use</span>
+			</div>
+			<div class="row h50">
+				<div class="fl3 row bg7 br3" [ngClass]="{'bg9': easyToUseLabel === 'A', 'bg6' : easyToUseLabel === 'B'
+				, 'bg10' : easyToUseLabel === 'C', 'bg7' : easyToUseLabel === 'D', 'bg8' : easyToUseLabel === 'E'}">
+					<div class="fl1 hc vc"><div class="box44 br3"></div></div>
+					<div class="fl1"></div>
+					<!--<div class="fl1 txt8 hc">D</div>-->
+				</div>
+		 <div *ngIf="easyToUseLabel === 'E'" [ngClass]="{'bg8': easyToUseLabel === 'E'}" class="fl1 bgw bln br2 txt8 hc">E</div>
+          <div *ngIf="easyToUseLabel === 'D'" [ngClass]="{'bg7': easyToUseLabel === 'D'}" class="fl1 bgw bln br2 txt8 hc">D</div>
+              <div *ngIf="easyToUseLabel === 'C'" [ngClass]="{'bg10': easyToUseLabel === 'C'}" class="fl1 bgw bln br2 txt8 hc">C</div>
+                <div *ngIf="easyToUseLabel === 'B'" [ngClass]="{'bg6': easyToUseLabel === 'B'}" class="fl1 bgw bln br2 txt8 hc">B</div>
+          				<div *ngIf="easyToUseLabel === 'A'" [ngClass]="{'bg9': easyToUseLabel === 'A'}" class="fl1 bgw bln br2 txt8 hc">A</div>
+			</div>
+			<div class="h28">
+				<span class="txt7">Secure data</span>
+			</div>
+			<div class="row h50">
+				<div class="fl2 row bg8 br3" [ngClass]="{'bg9': secureDataLabel === 'A', 'bg6' : secureDataLabel === 'B'
+				, 'bg10' : secureDataLabel === 'C', 'bg7' : secureDataLabel === 'D', 'bg8' : secureDataLabel === 'E'}">
+					<div class="fl1 hc vc">
+						<img class="icon40" *ngIf="secureDataLabel==='D' || secureDataLabel==='E' " src="./assets/images/unlock.png" />
+            <img class="icon40" *ngIf="secureDataLabel==='A' || secureDataLabel==='B' " src="./assets/images/lock.png" />
+					</div>
+					<!--<div class="fl1 txt8 hc">E</div>-->
+				</div>
+		  <div *ngIf="secureDataLabel === 'E'" [ngClass]="{'bg8': secureDataLabel === 'E'}" class="fl1 bgw bln br2 txt8 hc">E</div>
+          <div *ngIf="secureDataLabel === 'D'" [ngClass]="{'bg7': secureDataLabel === 'D'}" class="fl1 bgw bln br2 txt8 hc">D</div>
+              <div *ngIf="secureDataLabel === 'C'" [ngClass]="{'bg10': secureDataLabel === 'C'}" class="fl1 bgw bln br2 txt8 hc">C</div>
+                <div *ngIf="secureDataLabel === 'B'" [ngClass]="{'bg6': secureDataLabel === 'B'}" class="fl1 bgw bln br2 txt8 hc">B</div>
+          				<div *ngIf="secureDataLabel === 'A'" [ngClass]="{'bg9': secureDataLabel === 'A'}" class="fl1 bgw bln br2 txt8 hc">A</div>
+			</div>
+			<div class="h28">
+				<span class="txt7">Robust build</span>
+			</div>
+			<div class="row h50">
+				<div class="fl1 row bg9 br3" [ngClass]="{'bg9': robustBuildLabel === 'A', 'bg6' : robustBuildLabel === 'B'
+				, 'bg10' : robustBuildLabel === 'C', 'bg7' : robustBuildLabel === 'D', 'bg8' : robustBuildLabel === 'E'}">
+					<div class="fl1 hc vc">
+						<img class="icon40" src="./assets/images/wrench.png" />
+					</div>
+					<div class="fl4"></div>
+        <div *ngIf="robustBuildLabel === 'E'"  [ngClass]="{'bg8': robustBuildLabel === 'E'}" class="fl1  bln br2 txt8 hc">E</div>
+          <div *ngIf="robustBuildLabel === 'D'"  [ngClass]="{'bg7': robustBuildLabel === 'D'}" class="fl1  bln br2 txt8 hc">D</div>
+              <div *ngIf="robustBuildLabel === 'C'"  [ngClass]="{'bg10': robustBuildLabel === 'C'}" class="fl1  bln br2 txt8 hc">C</div>
+                <div *ngIf="robustBuildLabel === 'B'"  [ngClass]="{'bg6': robustBuildLabel === 'B'}" class="fl1  bln br2 txt8 hc">B</div>
+          				<div *ngIf="robustBuildLabel === 'A'"  [ngClass]="{'bg9': robustBuildLabel === 'A'}" class="fl1  bln br2 txt8 hc">A</div>
+				</div>
+			</div>
+		</div>
+		<div class="p20">
+			<div class="h28">
+				<span class="txt7">Overall health app quality score</span>
+			</div>
+			<div class="row h50">
+				<div class="fl4 row  br3">
+					<div class="fl3"></div>
+					<div class="fl1 txt8 hc" [ngClass]="{'bg8': overalllabel === 'E'}">E</div>
+				</div>
+        <div class="fl1 txt8 hc br4" [ngClass]="{'bg7': overalllabel === 'D'}">D</div>
+        <div class="fl1 txt8 hc br7" [ngClass]="{'bg10': overalllabel === 'C'}">C</div>
+				<div class="fl1 bgw bln br5 txt8 hc" [ngClass]="{'bg6': overalllabel === 'B'}">B</div>
+				<div class="fl1 bgw bln br2 txt8 hc"  [ngClass]="{'bg9': overalllabel === 'A'}">A</div>
+			</div>
+			<div class="row">
+				<img class="icn-s br3 r12 t12 b12" src="./assets/images/check-mark.png" />
+				<span class="txt4">App checked on {{today}}</span>
+			</div>
+			<div class="row">
+				<div class="fl1"></div>
+				<span class="txt3">CEN-ISO/TS 82304-2:2021</span>
+			</div>
+		</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
