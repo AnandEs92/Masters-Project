@@ -1,0 +1,340 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+
+.btn-red{
+  background-color: #dc1928;
+  color: #fff;
+  height: 41px;
+  font-weight: bold;
+  border:none;
+}
+
+.background-img{
+  background-image: url('assets/images/medical.jpg');
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 650px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+.btn-red:hover {
+  border: 1px solid #eb4755;
+  background-color: #eb4755;
+  color: #ffffff;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.card {
+  height: 100vh;
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+}
+.form-width{
+  width: 45%;
+  padding-bottom: 15px;
+}
+.input-form{
+  width: 98%;
+  padding: 4px;
+}
+.result-button{
+  float: right;
+  left:82%;
+}
+.scrollable{
+  overflow-y: scroll;
+  height:100%;
+}
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  border:1px solid #b3b3b3
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.bg1 {
+	background-color: rgb(244, 208, 244);
+}
+.bg2 {
+	background-color: rgb(216, 241, 177);
+}
+.bg3 {
+	background-color: rgb(234, 204, 178);
+}
+.bg4 {
+	background-color: rgb(182, 225, 239);
+}
+.bg5 {
+	background-color: #caebf8;
+}
+.bg6 {
+	background-color: #c1d732;
+}
+.bg7 {
+	background-color: #fbb914;
+}
+.bg8 {
+	background-color: #ee2e23;
+}
+.bg9 {
+	background-color: #30b44a;
+}
+.bg10 {
+	background-color: #fbee23;
+}
+.bgw {
+	background-color: white;
+}
+.br1 {
+	border: solid 2px #70794e;
+}
+.br2 {
+	border: solid 2px #45bb62;
+}
+.br3 {
+	border: solid 2px #36336c;
+}
+.br4 {
+	border: solid 2px #f8f484;
+}
+.br5 {
+	border: solid 2px #cce27c;
+}
+.br6 {
+	border: solid 2px #938c44;
+}
+.br7 {
+	border: solid 2px #fbbc1f;
+}
+
+.p20 {
+	padding: 20px;
+}
+.ps20 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.pb16 {
+	padding-bottom: 16px;
+}
+
+.vc {
+	/* vertical centre*/
+	align-items: center;
+}
+
+.hc {
+	justify-content: center;
+}
+
+.flag img {
+	width: 100px;
+	height: 66px;
+}
+
+.app img {
+	width: 100px;
+	height: 100px;
+}
+
+.icon img {
+	width: 40px;
+	height: 40px;
+}
+
+.icn-s {
+	width: 25px;
+	height: 25px;
+	align-self: center;
+}
+.bln {
+	border-left: none;
+}
+
+.c5 {
+	border-radius: 5px;
+}
+
+.l20 {
+	margin-left: 20px;
+}
+
+.b28 {
+	margin-bottom: 28px;
+}
+.b20 {
+	margin-bottom: 20px;
+}
+.b9 {
+	margin-bottom: 9px;
+}
+.r9 {
+	margin-right: 9px;
+}
+.r12 {
+	margin-right: 12px;
+}
+.t12 {
+	margin-top: 12px;
+}
+.b12 {
+	margin-bottom: 12px;
+}
+.t5 {
+	margin-top: 5px;
+}
+.fl1 {
+	display: flex;
+	flex: 1;
+}
+.fl2 {
+	display: flex;
+	flex: 2;
+}
+.fl3 {
+	display: flex;
+	flex: 3;
+}
+.fl4 {
+	display: flex;
+	flex: 4;
+}
+.fl5 {
+	display: flex;
+	flex: 5;
+}
+.box44 {
+	box-sizing: border-box;
+	width: 44px;
+	height: 44px;
+}
+.icon40 {
+	width: 40px;
+	height: 40px;
+}
+
+.line {
+	border: 4px dotted;
+	border-style: dotted;
+	border-width: 4px 0 0 0;
+	border-color: black;
+	border-spacing: 9px;
+}
+
+.h28 {
+	height: 28px;
+}
+
+.h50 {
+	height: 50px;
+}
+
+.txt1 {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	vertical-align: middle;
+}
+.txt2 {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 22px;
+	vertical-align: middle;
+}
+.txt3 {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-size: 7px;
+	line-height: 9px;
+	vertical-align: middle;
+}
+.txt4 {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	vertical-align: middle;
+}
+.txt5 {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 20px;
+	vertical-align: top;
+}
+.txt6 {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	vertical-align: top;
+}
+.txt7 {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+	vertical-align: bottom;
+}
+.txt8 {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	vertical-align: middle;
+}
+.w-350{
+  width:350px
+}
+.m-l-40{
+  margin-left: 40%;
+}
+.ui-multiselect {
+    width: 100%;
+}
+select {
+  width: 100%;
+  height: 30px;
+}

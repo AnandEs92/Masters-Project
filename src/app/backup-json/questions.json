@@ -1,0 +1,844 @@
+[
+	{
+		"id": "1",
+		"type": "multiselect",
+		"label": "Which operating systems or platforms does the health app support?",
+		"required":false,
+		"response": "",
+		"options": [
+			{ "label": "Android","value":"Android" },
+			{ "label": "iOS","value":"iOS" },
+			{ "label": "Web app","value":"Web" }
+		]
+	},
+	{
+		"id": "2",
+		"type": "text",
+		"label": "What is the name of the health app?",
+		"required":false,
+		"response": ""
+	},
+	{
+		"id": "3",
+		"type": "file",
+		"label": "Provide the health app icon, if available.",
+		"required":false,
+		"response": ""
+	},
+	{
+		"id": "4",
+		"type": "dropdown",
+		"label": "In which languages is the health app available?",
+		"required":false,
+		"response": "",
+		"options": [
+			{ "label": "English" },
+			{ "label": "Hindi" },
+			{ "label": "Chinese" }
+		]
+	},
+	{
+		"id": "5",
+		"type": "text",
+		"label": "Provide health app access instructions for the app assessment organization",
+		"required":false,
+		"response": ""
+	},
+	{
+		"id": "6",
+		"type": "text",
+		"label": "What is the name of the health app manufacturer?",
+		"required":false,
+		"response": ""
+	},
+	{
+		"id": "7",
+		"type": "email",
+		"label": "Provide e-mail address and telephone number of the person who is authorized to represent the health app manufacturer",
+		"required":false,
+		"response": ""
+	},
+	{
+		"id": "8",
+		"type": "text",
+		"label": "Who are the intended users of the health app?",
+		"required":false,
+		"response": ""
+	},
+	{
+		"id": "9",
+		"type": "dropdown",
+		"label": "Are age restrictions of the intended users or subjects of care made clear to potential customers and users?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [
+			{ "label": "YES" },
+			{ "label": "NO" },
+			{ "label": "NOT Applicable" }
+		]
+	},
+	{
+		"id": "10",
+		"type": "text",
+		"label": "For which health issue(s) and/or health need(s) is the health app intended?",
+		"required":false,
+		"response": ""
+	},
+	{
+		"id": "11",
+		"type": "dropdown",
+		"label": "What is the intended use of the health app?",
+		"required":false,
+		"response": "",
+		"options": [
+			{ "label": "System service" },
+			{ "label": "inform " },
+			{ "label": "Simple monitoring" },
+			{ "label": "communicating" },
+			{ "label": "Preventative behavior change" },
+			{ "label": "Self-manage" },
+			{ "label": "Research" },
+			{ "label": " Treat" },
+			{ "label": "Active monitoring " },
+			{ "label": "calculate" },
+			{ "label": "Diagnose" }
+		]
+	},
+	{
+		"id": "12",
+		"type": "dropdown",
+		"label": "Are assessments done to establish whether the health app is a medical device and if Applicable is regulatory approval obtained before the app is made available in each country",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "13",
+		"type": "dropdown",
+		"label": "Are health professionals involved in the development of the health app?",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "14",
+		"type": "dropdown",
+		"label": "Is appropriate peer reviewed scientific literature used in the development of the health app?",
+		"required":true,
+		"weight":2,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "15",
+		"type": "dropdown",
+		"label": "Are the health risks of the health app analysed?",
+		"required":true,
+		"weight":"",
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "16",
+		"type": "dropdown",
+		"label": " Are measures in place to control the health risks of the health app?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [
+			{ "label": "YES" },
+			{ "label": "NO" },
+			{ "label": "NOT Applicable" }
+		]
+	},
+	{
+		"id": "17",
+		"type": "dropdown",
+		"label": " Are the residual risks of using the health app found to be acceptable?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [
+			{ "label": "YES" },
+			{ "label": "NO" },
+			{ "label": "NOT Applicable" }
+		]
+	},
+	{
+		"id": "18",
+		"type": "text",
+		"label": "Describe when the health app requires approval from a health professional before use.",
+		"required":false,
+		"response": ""
+	},
+	{
+		"id": "19",
+		"type": "dropdown",
+		"label": "Are potential customers and users of the health app made aware of the health risks, contra-indications and limitations of use?",
+		"required":true,
+		"weight":"",
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "20",
+		"type": "dropdown",
+		"label": "Is a process to collect and review safety concerns and incidents for the health app maintained?",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [
+			{ "label": "YES" },
+			{ "label": "NO" },
+			{ "label": "NOT Applicable" }
+		]
+	},
+	{
+		"id": "21",
+		"type": "dropdown",
+		"label": "Are ethical challenges of the health app assessed with intended users and health professionals?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "22",
+		"type": "dropdown",
+		"label": "Is the health app approved by an independent ethics advisor or ethics advisory board?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "23",
+		"type": "text",
+		"label": "Describe the health benefit of using the app",
+		"required":false,
+        "response": ""
+	},
+	{
+		"id": "24",
+		"type": "dropdown",
+		"label": "Are potential customers and users made aware of the health interventions applied to achieve the health benefit",
+		"required":true,
+		"weight":2,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [
+			{ "label": "YES" },
+			{ "label": "NO" },
+			{ "label": "NOT Applicable" }
+		]
+	},
+	{
+		"id": "25",
+		"type": "dropdown",
+		"label": "Are potential customers and users made aware of all financial costs to achieve the health benefit?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [
+			{ "label": "YES" },
+			{ "label": "NO" },
+			{ "label": "NOT Applicable" }
+		]
+	},
+	{
+		"id": "26",
+		"type": "dropdown",
+		"label": " Are potential customers and users made aware of the need for support of a health professional to achieve the health benefit?",
+		"required":true,
+		"weight":2,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [
+			{ "label": "YES" },
+			{ "label": "NO" },
+			{ "label": "NOT Applicable" }
+		]
+	},
+	{
+		"id": "27",
+		"type": "dropdown",
+		"label": "   Is evidence available to support the health benefit of using the app",
+		"required":true,
+		"weight":"",
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "28",
+		"type": "dropdown",
+		"label": " Does this evidence include peer reviewed research involving the use of this health app",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "29",
+		"type": "dropdown",
+		"label": " Is the level of the evidence appropriate?",
+		"required":true,
+		"weight":2,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "30",
+		"type": "dropdown",
+		"label": " Is there a maintenance process for the health information in the app",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [
+			{ "label": "YES" },
+			{ "label": "NO" },
+			{ "label": "NOT Applicable" }
+		]
+	},
+	{
+		"id": "31",
+		"type": "dropdown",
+		"label": " Are all sources for the health information in the health app disclosed to potential customers and users?",
+		"required":true,
+		"weight":2,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "32",
+		"type": "dropdown",
+		"label": "  Are all sources of funding of the health app disclosed to potential customers and users?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "33",
+		"type": "dropdown",
+		"label": " Is the use of advertising mechanisms in the health app disclosed to potential customers and users and are these advertisements clearly distinguishable?",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [
+			{ "label": "YES" },
+			{ "label": "NO" },
+			{ "label": "NOT Applicable" }
+		]
+	},
+	{
+		"id": "34",
+		"type": "dropdown",
+		"label": " Is evidence available of a societal benefit of using the app",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "35",
+		"type": "dropdown",
+		"label": "  Does this evidence include peer reviewed research involving the use of this health app",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Healthy and safe",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "36",
+		"type": "dropdown",
+		"label": "   Is the health app WCAG 2.1 AA or AAA compliant?",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Easy to use",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "37",
+		"type": "dropdown",
+		"label": " Are WCAG 2.1 AA compliant measures taken to ensure that all intended users can perceive all relevant information and user interface components of the health app and related documents?",
+		"required":true,
+		"weight":1,
+	    "response": "",
+    "scoreType":"Easy to use",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "38",
+		"type": "dropdown",
+		"label": "Are WCAG 2.1 AA compliant measures taken to ensure that all intended users can operate all relevant user interface and navigation components of the health app and related documents?",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Easy to use",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "39",
+		"type": "dropdown",
+		"label": "  Are WCAG 2.1 AA compliant measures taken to ensure that all intended users can understand all relevant information and user interface components of the health app and related documents? ",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Easy to use",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "40",
+		"type": "dropdown",
+		"label": "   Is the health app age-appropriate?",
+		"required":true,
+		"weight":2,
+		"response": "",
+    "scoreType":"Easy to use",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "41",
+		"type": "dropdown",
+		"label": " Is the health app design based on an explicit understanding of users, tasks and environment?",
+		"required":true,
+		"weight":2,
+		"response": "",
+    "scoreType":"Easy to use",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "42",
+		"type": "dropdown",
+		"label": " Are intended users involved throughout design and development of the health app",
+		"required":true,
+		"weight":2,
+		"response": "",
+    "scoreType":"Easy to use",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "43",
+		"type": "dropdown",
+		"label": " Is the design of the health app driven and refined by user-centred evaluation?",
+		"required":true,
+		"weight":2,
+		"response": "",
+    "scoreType":"Easy to use",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "44",
+		"type": "dropdown",
+		"label": " Are measures in place to avoid use error and reasonably foreseeable misuse of the health app?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Easy to use",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "45",
+		"type": "dropdown",
+		"label": "   Are potential customers and users provided with adequate product information about the health app?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Easy to use",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "46",
+		"type": "dropdown",
+		"label": "  Are instructions for use readily available for users?",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Easy to use",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "47",
+		"type": "dropdown",
+		"label": "   Are appropriate resources available to adequately help users who experience problems with the health app?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Easy to use",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "48",
+		"type": "dropdown",
+		"label": " Is relevant data on the usability of the health app systematically gathered throughout its entire lifetime, in order to make regular improvements?",
+		"response": "",
+    "scoreType":"Easy to use",
+		"required":true,
+		"weight":1,
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "49",
+		"type": "dropdown",
+		"label": "   Does the health app process Personally Identifiable Information (PII)?",
+		"required":false,
+		"response": "",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "50",
+		"type": "dropdown",
+		"label": "    Does the health app process health related PII?",
+		"required":false,
+		"response": "",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "51",
+		"type": "dropdown",
+		"label": " Is data minimization applied in the health app?",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "52",
+		"type": "dropdown",
+		"label": " Is an appropriate retention policy established to erase or review the data stored?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "53",
+		"type": "dropdown",
+		"label": " Is a privacy statement readily available to potential customers and users of the health app?",
+		"required":true,
+		"weight":"",
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "54",
+		"type": "dropdown",
+		"label": "   Does the privacy statement start with an accessible overview of less than 150 words?",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "55",
+		"type": "dropdown",
+		"label": "  Are contracts in place with all processors and controllers of PII of the health app and associated services to ensure the level of security controls and privacy protection are as communicated to the user?",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "56",
+		"type": "dropdown",
+		"label": "  Is opt-in the default setting for sharing PII with third parties",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+
+	{
+		"id": "57",
+		"type": "dropdown",
+		"label": " Does the app manufacturer have a person responsible for legal and regulatory compliance of processing of PII?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "58",
+		"type": "dropdown",
+		"label": " Are security-incident response procedures in place-that include reporting PII breaches to the user and relevant authorities?",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "59",
+		"type": "dropdown",
+		"label": "   Have the health app manufacturer and all organizations providing associated services implemented ISO/IEC 27001 or a recognized equivalent?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "60",
+		"type": "dropdown",
+		"label": "  Is an information security risk assessment documented?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "61",
+		"type": "dropdown",
+		"label": "    Is a secure by design process followed?",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "62",
+		"type": "dropdown",
+		"label": "    Are measures in place to ensure that all third-party software libraries and other software components for the health app are reliable and maintained?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "63",
+		"type": "dropdown",
+		"label": "  Is a process to prevent unauthorized access and modifications to the health app source code in place?",
+		"required":true,
+		"weight":2,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "64",
+		"type": "dropdown",
+		"label": "  Are organizational measures in place to ensure PII is processed in a manner that is compatible with the explicit, legitimate purposes specified in the privacy statement",
+		"required":true,
+		"weight":2,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "65",
+		"type": "dropdown",
+		"label": "     Is user authentication, authorization and session management implemented to secure access to the health app?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "66",
+		"type": "dropdown",
+		"label": "    Does the health app transmit and store all PII with adequate encryption?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "67",
+		"type": "dropdown",
+		"label": "  Are security vulnerabilities reported, identified, assessed, logged, responded to, disclosed, and quickly and effectively resolved?",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "68",
+		"type": "dropdown",
+		"label": "  Are the security of the health app and associated services tested on a regular basis and at major changes?",
+		"required":true,
+		"weight":2,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "69",
+		"type": "dropdown",
+		"label": "  Is the information security policy readily available to potential customers and users?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Secure data",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "70",
+		"type": "dropdown",
+		"label": " Are all the health app product requirements documented?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Robust build",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "71",
+		"type": "dropdown",
+		"label": " Is the health app developed with a software development process that covers the standards, methods and tools to be used?",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Robust build",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "72",
+		"type": "dropdown",
+		"label": "  Is a secure coding standard followed?",
+		"required":true,
+		"weight":2,
+		"response": "",
+    "scoreType":"Robust build",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "73",
+		"type": "dropdown",
+		"label": "  Is a configuration management plan established for the health app?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Robust build",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "74",
+		"type": "dropdown",
+        "label": "    Are processes in place to deal with a significant increase or spike in demand?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Robust build",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "75",
+		"type": "dropdown",
+		"label": "  Is a validation and verification plan used for the health app??",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Robust build",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "76",
+		"type": "dropdown",
+		"label": "    Is a release and deployment process established?",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Robust build",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "77",
+		"type": "dropdown",
+		"label": "  Is a maintenance process established?",
+		"required":true,
+		"weight":3,
+		"response": "",
+    "scoreType":"Robust build",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "78",
+		"type": "dropdown",
+		"label": " Are potential customers and users of the health app able to access the specifications and implementation guides for all the APIs ",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Robust build",
+		"options": [
+			{ "label": "YES" },
+			{ "label": "NO" },
+			{ "label": "NOT Applicable" }
+		]
+	},
+	{
+		"id": "79",
+		"type": "dropdown",
+		"label": "  Are potential customers and users of the health app able to access the specifications and implementation guides for the terminology or terminologies used",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Robust build",
+		"options": [{ "label": "YES" }, { "label": "NO" }]
+	},
+	{
+		"id": "80",
+		"type": "dropdown",
+		"label": " Does the health app validate all data for the health app transferred via APIs ",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Robust build",
+		"options": [
+			{ "label": "YES" },
+			{ "label": "NO" },
+			{ "label": "NOT Applicable" }
+		]
+	},
+	{
+		"id": "81",
+		"type": "dropdown",
+		"label": " Can users obtain their health related PII by a data export to another platform ",
+		"required":true,
+		"weight":1,
+		"response": "",
+    "scoreType":"Robust build",
+		"options": [
+			{ "label": "YES" },
+			{ "label": "NO" },
+			{ "label": "NOT Applicable" }
+		]
+	}
+]
